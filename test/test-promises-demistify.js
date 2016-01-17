@@ -3,13 +3,15 @@
 
 
 import Test from 'tape';
-import Promises-demistify from '../dist/lib';
+import x from '../dist/lib';
 
 Test('test promises-demistify', (t) => {
 
     t.test('plan', (t) => {
         t.plan(1);
-
+         x().then((obj)=>{
+            console.log(obj);
+         });
         t.ok(true);
     });
 
